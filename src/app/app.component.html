@@ -1,16 +1,32 @@
-<h1>Welcome</h1>
-<p>{{title}}</p>
+<h1 style="color:blue">WElcome to First project of Angular</h1>
 
+<h2>Output</h2>
+
+<p>Value of num: -  {{num}}</p>
+<p>value of num1: - {{num1}}</p>
+<p>Value of num2: - {{num2}}</p>
+<p>Courses: - {{courses}}</p>
 <p>{{courses[2]}}</p>
-<hr>
+<p>{{courses[3]}}</p>
+<ul>
+  <li>{{arr1}}</li>
+</ul>
+
+<p>Addition: - {{20+30}}</p>
+<h2>Student info: - </h2>
+<p>{{student}}</p>
 <p>{{student.age}}</p>
 
-<p>{{showMsg()}}</p>
+<p>Function's Data: - {{showmsg()}}</p>
 <hr>
-<div>
-  <h3>NgFor Example</h3>
-  <ul *ngFor="let i of Employees">
-    <li><pre>{{i.ename}} {{i.sal}} {{i.country}} {{i.deptno}}</pre></li>
-  </ul>
-  <li></li>
+<p>Employee's Info</p>
+<p>{{Employees}}</p>
+<p>{{Employees[0].ename}}</p>
+
+<div style="text-align: center;">
+    <h1>NgFor Example- Structural Directives</h1>
+    <ul *ngFor="let i of Employees">
+      <li>{{i.ename}} {{i.sal}} {{i.Country}}</li>
+        
+    </ul>
 </div>
