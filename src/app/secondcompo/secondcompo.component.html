@@ -1,0 +1,67 @@
+<h2>This is mt second component</h2>
+
+<hr>
+<table border="2" align="center" cellPadding="3" width="500px">
+    <tr>
+        <th>Emp Name</th>
+        <th>Salary</th>
+        <th>Country</th>
+        <th>Deptno</th>
+        <th>Role</th>
+    </tr>
+    <tr *ngFor="let e of Employees">
+        <td>{{e.ename}}</td>
+        <td>{{e.sal}}</td>
+        <td>{{e.Country}}</td>
+        <td>{{e.deptno}}</td>
+        <td>{{e.Role}}</td>
+    </tr>
+</table>
+
+<h2>USER INFORMATION</h2>
+<hr>
+<table border="2" align="center" cellPadding="3" width="500px" >
+    <tr>
+        <th>Uid</th>
+        <th>Uemail</th>
+        <th>Upassword</th>
+    </tr>
+    <tr *ngFor="let e of Users">
+        <td>{{e.Uid}}</td>
+        <td>{{e.Uemail}}</td>
+        <td>{{e.Upassword}}</td>
+    </tr>
+</table>
+
+<hr>
+<h2>Personal Information</h2>
+<hr>
+<ul *ngFor="let i of Personalinfo">
+    <li>{{i.Pid}} </li>
+    <li>{{i.Pname}} </li>
+    <li>{{i.Pcountry}}</li>
+</ul>
+
+<hr>
+<h2>Bank Information</h2>
+<hr>
+<div>
+    <ul *ngFor="let i of BankInformation">
+        <li>{{i.accNo}}</li>
+        <li>{{i.accName}}</li>
+        <li>{{i.accBalance}}</li>
+        <li>{{i.accBank}}</li>
+    </ul>
+</div>
+
+<hr>
+
+<h2>NgFor in angular</h2>
+
+<hr>
+<div *ngIf="loggedIn;else elseblock">
+    <p>Hello <Strong>Admin</Strong></p>
+</div>
+<ng-template #elseblock> 
+    <p>Hello <Strong>Student</Strong></p>
+</ng-template>
