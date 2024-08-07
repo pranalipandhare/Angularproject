@@ -1,0 +1,53 @@
+<div class="container">
+    <hr>
+    <h1>Property Binding</h1>
+    <h3 [innerHTML]="msg" class="text-primary"></h3>
+
+    <input type="text" [value]="text">
+
+    <img [src]="imgPath" height="200px" width="300px" alt="image">
+</div>
+
+<div class="container">
+    <hr>
+    <h1>Two-Way Data Binding</h1>
+    Enter Your Name: - <input type="text" [(ngModel)]="greeting">
+    <p>Welcome to Two Way Data Binding.... {{greeting}}</p>
+</div>
+
+<div>
+    <hr>
+    <h3>Calculator using ngModel</h3>
+    <input type="number" [(ngModel)]="num1"> <br> <br>
+    <input type="number" [(ngModel)]="num2">
+    <h2>Addition : - {{num1+num2}}</h2>
+
+    <hr><hr>
+    <input type="number" [(ngModel)]="num3"> <br> <br>
+    <input type="number" [(ngModel)]="num4">
+    <h2>Subtraction : - {{num3-num4}}</h2>
+
+    <hr><hr>
+    <input type="number" [(ngModel)]="num5"> <br> <br>
+    <input type="number" [(ngModel)]="num6">
+    <h2>Multiplication: - {{num5*num6}}</h2>
+
+    <hr><hr>
+    <input type="number" [(ngModel)]="num7"> <br> <br>
+    <input type="number" [(ngModel)]="num8">
+    <h2>Subtraction : - {{num7/num8}}</h2>
+</div>
+
+<div>
+    <hr>
+    <h2>Event Binding</h2>
+    <button (click)="sayHello()">Click Me</button>
+   
+    <br><br>
+    <button (click)="hello()">click to Say Hiii to me</button>
+    <p>Welcome, {{name}}</p>
+
+    <br><br><hr>
+    <button (mouseover)="hey()" (mouseout)="Nothello">Heyyyy</button>
+    <p>Good Night, {{name1}}</p>
+</div>
