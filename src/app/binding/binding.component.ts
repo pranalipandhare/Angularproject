@@ -33,9 +33,8 @@ export class BindingComponent {
   name="";
   hello(){
     this.name = "Pranali"
-
   }
-
+  
   name1=""
   hey(){
     this.name1="Runali"
@@ -45,4 +44,26 @@ export class BindingComponent {
     this.name1= "Pranu"
   }
 
+
+  globalVal :any
+  fun5(val:any){
+    this.globalVal = val; 
+    console.log(val);
+  }
+
+  sum: number = 0;
+  fun6(val:any, val1:any){
+    this.sum = parseInt(val)+parseInt(val1);
+  }
+
+  text1:any
+  keyEvent(e:any){
+   this.msg=e.target.value
+  //  console.log(this.msg);
+  }
+
+  dropDownValue:any
+  SetDropDownValue(dropValue:any){
+    this.dropDownValue = dropValue.target.value;
+  }
 }

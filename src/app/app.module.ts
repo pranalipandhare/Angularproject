@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { SecondcompoComponent } from './secondcompo/secondcompo.component';
 import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
+import { PipecompComponent } from './pipecomp/pipecomp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SecondcompoComponent,
-    BindingComponent
+    BindingComponent,
+    PipecompComponent
   ],
   imports: [
     BrowserModule,

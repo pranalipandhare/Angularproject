@@ -51,3 +51,39 @@
     <button (mouseover)="hey()" (mouseout)="Nothello">Heyyyy</button>
     <p>Good Night, {{name1}}</p>
 </div>
+
+<hr>
+
+<div class="container">
+<h2>Event Handling</h2>
+<input type="text" #txt ><br><br>
+<button class="btn btn-outline-success m-3" (click)="fun5(txt.value)">Click Me</button>
+<p> Value of textbox:- {{globalVal}}</p>
+
+<hr>
+<h2>Addition of two numbers</h2>
+<input type="number" #Num1 class="m-2"> 
+<input type="number" #Num2>
+<button class="btn btn-success m-3" (click)="fun6(Num1.value,Num2.value)">Show Addition</button>
+<p>Addition of Two Numbers: - {{sum}}</p>
+
+<hr>
+<input type="text" (keyup)="keyEvent($event)">
+<p>Text: - {{msg}}</p>
+
+<h2>Select Country</h2>
+<select (change)="SetDropDownValue($event)">
+    <option value="">Select</option>
+    <option value="IN">In</option>
+    <option value="US">US</option>
+    <option value="UK">UK</option>
+</select> <br> <br>
+
+<h2 class="text-warning">You Have Selected</h2> <br>
+<div [ngSwitch] = 'dropDownValue'>
+    <h3 *ngSwitchCase="'IN'">IN</h3>
+    <h3 *ngSwitchCase="'US'">US</h3>
+    <h3 *ngSwitchCase="'UK'">UK</h3>
+    <h3 *ngSwitchDefault="">You have not selected</h3>
+</div>
+</div>
